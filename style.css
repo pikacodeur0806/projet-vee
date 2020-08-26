@@ -1,0 +1,360 @@
+@font-face {
+  font-family: "SevenOneEight-Black";
+  src: url("fonts/SevenOneEight-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SevenOneEight-Book";
+  src: url("fonts/SevenOneEight-Book.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SevenOneEight-ExtraBold";
+  src: url("fonts/SevenOneEight-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SevenOneEight-Light";
+  src: url("fonts/SevenOneEight-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SevenOneEight-Medium";
+  src: url("fonts/SevenOneEight-Medium.ttf") format("truetype");
+}
+body {
+  background: #efefef;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  /*background: #d7ecdf;*/
+}
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "SevenOneEight-Medium";
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #d61406;
+  text-align: center;
+  margin: 20px 15px 10px;
+}
+
+p.lead {
+  text-transform: uppercase;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+}
+
+hr {
+  max-width: 180px;
+  height: 4px;
+  background: #000;
+  border: 0;
+}
+
+/*.span {
+    background: red;
+    padding: 2px;
+}*/
+/*figure {
+    margin: 10px;
+}
+figcaption {
+    text-align: left;
+}*/
+img.photo {
+  max-width: 100%;
+  display: block;
+}
+
+/*.block-cards {
+    max-width: 1280px;
+    margin: 0 auto;
+}*/
+.col-cards {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+.card {
+  margin: 15px;
+  border-radius: 6px;
+  max-width: 360Px;
+  position: relative;
+  /*    flex: 0 0 33.333333%;
+      max-width: 369px;;*/
+  width: 100%;
+}
+
+.card-bottom {
+  display: flex;
+  background: #FFF;
+}
+
+.legende {
+  width: 80%;
+}
+
+.fleche {
+  width: 20%;
+  margin-right: 13px;
+}
+
+span.country {
+  font-family: SevenOneEight-Black;
+}
+
+span.place {
+  font-family: SevenOneEight-Light;
+}
+
+.label {
+  font-family: SevenOneEight-Light;
+}
+
+#selection {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: 52px;
+  border-radius: unset;
+  margin: 55px auto;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: SevenOneEight-Book;
+  padding-left: 50px;
+}
+
+#selection::before {
+  text-transform: uppercase !important;
+  content: url(export/desti-selection.jpg);
+  width: 42px;
+  height: 42px;
+}
+
+.illustration {
+  position: relative;
+}
+
+.brand, .upto {
+  position: absolute;
+  bottom: 16px;
+}
+
+.brand {
+  left: 13px;
+}
+
+.upto {
+  right: 13px;
+  margin: 0;
+  font-family: SevenOneEight-ExtraBold;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+ul.legende {
+  list-style: none;
+  padding: 13px;
+}
+
+.lien {
+  width: 42px;
+  height: 42px;
+  background: #d61406;
+  margin: 20px auto;
+  /* padding-top: 50px; */
+}
+
+a.link {
+  text-decoration: none;
+  color: #FFF;
+  text-align: center;
+  display: block;
+  padding-top: 11px;
+}
+
+.etapes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+select {
+  /*-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 110%;  
+    height: auto;
+    border: 0; 
+    margin: 0;
+    padding: .75em;
+    border-radius: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;*/
+  color: red;
+}
+
+.offres {
+  padding: 20px 7px 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.membres {
+  background: #ed3323;
+  padding: 5px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.membres a {
+  color: #ffffff;
+}
+
+.membres h3 {
+  font-family: SevenOneEight-ExtraBold;
+  font-size: 20px;
+}
+
+.membres p {
+  font-family: SevenOneEight-Medium;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+span.tag1, span.tag2 {
+  padding: 2px;
+  margin: 0;
+  background: #000;
+  color: #FFF;
+  text-transform: uppercase;
+  font-family: SevenOneEight-Light;
+  font-size: 12px;
+  line-height: 12px;
+  margin-right: 10px;
+}
+
+span.tag2 {
+  background: #bd9c6a;
+}
+
+.mail {
+  padding: 30px 15px 45px;
+}
+
+.mail a {
+  text-decoration: none;
+  color: #FFF;
+  text-align: center;
+  display: block;
+  background: #ed3323;
+  max-width: 270px;
+  margin: 0 auto;
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: SevenOneEight-Light;
+  margin-top: 20px;
+}
+
+.bas-fixe {
+  color: #FFF;
+  background: #333333;
+  text-align: center;
+  font-family: SevenOneEight-Light;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 20px;
+  position: sticky;
+  bottom: 0;
+}
+
+.bas-fixe hr {
+  background: #ed3323;
+}
+
+.col-etapes {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .etapes {
+    flex: 0 0 33%;
+    max-width: 33.333333%;
+  }
+}
+@media (max-width: 768px) {
+  .etapes {
+    justify-content: left;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  p.lead {
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+
+  span.tag1, span.tag2 {
+    font-size: 9px;
+    line-height: 10px;
+  }
+}
+.bas ul li {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: SevenOneEight-Light;
+}
+
+.bas ul {
+  list-style: none;
+  display: inline-block;
+  padding: unset;
+  min-height: 60px;
+}
+
+.bas span.nombre {
+  font-size: 58px;
+  font-family: SevenOneEight-ExtraBold;
+  color: #ed3323;
+  margin-right: 10px;
+}
+
+.bas ul li span {
+  color: #ed3323;
+  font-family: SevenOneEight-ExtraBold;
+}
+
+h2 {
+  font-size: 16px;
+  font-family: SevenOneEight-Light;
+}
+
+.offres p {
+  font-size: 15px;
+  font-family: SevenOneEight-Black;
+}
+
+/*# sourceMappingURL=style.css.map */
